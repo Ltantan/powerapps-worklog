@@ -35,13 +35,13 @@ https://flow-with-tech.com/power-apps-work-log-app-development-story/
 
 これがこのアプリの中で、**最も画期的で狂気的**なところです。
 
-仕組み説明
+![仕組み説明](time-chain-diagram.png)
 
 ### キャンバスアプリ画面説明
 
 こんな感じです。基本的に時刻は入力不要です。
 
-画面説明  
+![画面説明](canvas-app-screenshot.png)
 
 ### Dataverse テーブル構成
 
