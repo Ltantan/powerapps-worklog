@@ -1,6 +1,6 @@
 # powerapps-worklog
 
-**記録魔という変態の道に、あなたも一歩足を踏み入れませんか。**
+**記録魔という狂気に、あなたも一歩足を踏み入れませんか。**
 
 何かを変えようと思ったら、まずは現状を数字で徹底的に把握する必要があります。
 このアプリは「自分の時間の使い方を、まず知りたい」という動機から生まれた行動ログシステムです。
@@ -21,9 +21,21 @@ https://flow-with-tech.com/lifelogging-system-with-power-apps-one-year-review/
 
 | コンポーネント | 説明 |
 |---|---|
-| **キャンバスアプリ** | スマホ・PCから素早く記録するための入力画面。単一登録と一括登録に対応 |
-| **モデル駆動型アプリ** | 蓄積データの一覧表示・グラフ可視化。日付・時間・プロジェクト・カテゴリで絞り込み可能 |
+| **キャンバスアプリ** | スマホ・PCから素早く記録するための入力画面。時刻の入力不要で記録ができます。 |
+| **モデル駆動型アプリ** | 蓄積データの一覧表示・グラフ可視化。プロジェクトやカテゴリの追加もここから。 |
 | **Dataverse** | 全行動ログを保存する中核データベース |
+
+### 時刻入力不要な仕組みの説明
+
+これがこのアプリの中で、**最も画期的で狂気的**なところです。
+
+![仕組み説明](time-chain-diagram.png)
+
+### キャンバスアプリ画面説明
+
+こんな感じです。基本的に時刻は入力不要です。
+
+![画面説明](docs/canvas-app-screenshot.png)  
 
 ### Dataverse テーブル構成
 
@@ -38,7 +50,7 @@ https://flow-with-tech.com/lifelogging-system-with-power-apps-one-year-review/
 | Date | 日付 |
 | StartTime / EndTime | 開始・終了時刻 |
 | Duration | 所要時間（分） |
-| WorkLog_Project | プロジェクト名（例: Power Apps, 読書, 筋トレ, Python） |
+| WorkLog_Project | プロジェクト名（例: Power Apps, 散歩） |
 | WorkLog_Category | カテゴリ（例: 市民開発, 運動, 趣味, 生活） |
 | ActionName | 具体的な行動名 |
 | Notes | メモ |
@@ -49,8 +61,10 @@ https://flow-with-tech.com/lifelogging-system-with-power-apps-one-year-review/
 
 ### 前提条件
 
-- Microsoft 365 ライセンス（Power Apps が使える環境）
-- Dataverse が利用できる環境（Power Apps の有償プランまたは試用版）
+- Microsoft Power Apps Premiumライセンス（有償版のやつです）
+- Dataverse が利用できる環境（開発者プログラムでも大丈夫だと思います）
+
+> 間違えていたらすみません。その際はご指導ください。
 
 ### 手順
 
@@ -60,7 +74,7 @@ https://flow-with-tech.com/lifelogging-system-with-power-apps-one-year-review/
 4. ダウンロードした `.zip` ファイルを選択してインポート
 5. インポート完了後、キャンバスアプリとモデル駆動型アプリが利用可能になります
 
-> **注意**: インポート後、Dataverseの接続を再設定する必要がある場合があります。
+> **注意**: インポート後、"The formula is empty."という警告が出ますが、データがないことが原因なので、無視してください。 データ追加すれば大丈夫です。
 
 ---
 
