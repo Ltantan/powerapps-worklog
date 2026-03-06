@@ -35,7 +35,7 @@ https://flow-with-tech.com/lifelogging-system-with-power-apps-one-year-review/
 
 こんな感じです。基本的に時刻は入力不要です。
 
-![画面説明](docs/canvas-app-screenshot.png)  
+![画面説明](canvas-app-screenshot.png)  
 
 ### Dataverse テーブル構成
 
