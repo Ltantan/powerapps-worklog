@@ -10,32 +10,38 @@
 
 ---
 
-## 作った背景・1年間の振り返り
+## 当時の開発ログ
+こちらのブログ記事をご覧ください：
+https://flow-with-tech.com/power-apps-work-log-app-development-story/
+
+## 1年間使ってみた振り返り
 
 詳しくはこちらのブログ記事をご覧ください：
-https://flow-with-tech.com/lifelogging-system-with-power-apps-one-year-review/
+[https://flow-with-tech.com/lifelogging-system-with-power-apps-one-year-review/](https://flow-with-tech.com/lifelogging-system-with-power-apps-one-year-review/)
 
 ---
 
 ## 構成
 
-| コンポーネント | 説明 |
-|---|---|
-| **キャンバスアプリ** | スマホ・PCから素早く記録するための入力画面。時刻の入力不要で記録ができます。 |
-| **モデル駆動型アプリ** | 蓄積データの一覧表示・グラフ可視化。プロジェクトやカテゴリの追加もここから。 |
-| **Dataverse** | 全行動ログを保存する中核データベース |
+
+| コンポーネント       | 説明                                      |
+| ------------- | --------------------------------------- |
+| **キャンバスアプリ**  | スマホ・PCから素早く記録するための入力画面。時刻の入力不要で記録ができます。 |
+| **モデル駆動型アプリ** | 蓄積データの一覧表示・グラフ可視化。プロジェクトやカテゴリの追加もここから。  |
+| **Dataverse** | 全行動ログを保存する中核データベース                      |
+
 
 ### 時刻入力不要な仕組みの説明
 
 これがこのアプリの中で、**最も画期的で狂気的**なところです。
 
-![仕組み説明](time-chain-diagram.png)
+仕組み説明
 
 ### キャンバスアプリ画面説明
 
 こんな感じです。基本的に時刻は入力不要です。
 
-![画面説明](canvas-app-screenshot.png)  
+画面説明  
 
 ### Dataverse テーブル構成
 
@@ -45,15 +51,17 @@ https://flow-with-tech.com/lifelogging-system-with-power-apps-one-year-review/
 
 ### 記録項目
 
-| 項目 | 内容 |
-|---|---|
-| Date | 日付 |
-| StartTime / EndTime | 開始・終了時刻 |
-| Duration | 所要時間（分） |
-| WorkLog_Project | プロジェクト名（例: Power Apps, 散歩） |
-| WorkLog_Category | カテゴリ（例: 市民開発, 運動, 趣味, 生活） |
-| ActionName | 具体的な行動名 |
-| Notes | メモ |
+
+| 項目                  | 内容                         |
+| ------------------- | -------------------------- |
+| Date                | 日付                         |
+| StartTime / EndTime | 開始・終了時刻                    |
+| Duration            | 所要時間（分）                    |
+| WorkLog_Project     | プロジェクト名（例: Power Apps, 散歩） |
+| WorkLog_Category    | カテゴリ（例: 市民開発, 運動, 趣味, 生活）  |
+| ActionName          | 具体的な行動名                    |
+| Notes               | メモ                         |
+
 
 ---
 
