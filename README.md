@@ -11,12 +11,12 @@
 ---
 
 ## 当時の開発ログ
-こちらのブログ記事をご覧ください：
+こちらのブログ記事をご覧ください：  
 https://flow-with-tech.com/power-apps-work-log-app-development-story/
 
 ## 1年間使ってみた振り返り
 
-詳しくはこちらのブログ記事をご覧ください：
+詳しくはこちらのブログ記事をご覧ください：  
 [https://flow-with-tech.com/lifelogging-system-with-power-apps-one-year-review/](https://flow-with-tech.com/lifelogging-system-with-power-apps-one-year-review/)
 
 ---
